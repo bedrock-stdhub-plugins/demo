@@ -4,15 +4,16 @@ plugin:
   # The name of your plugin.
   # Will be displayed on enable, and be used as the plugin namespace.
   # All the plugin data will be stored at `plugins/[name]/`.
-  name: my-plugin
+  name: demo
 
   # The description of your plugin.
   # Will be displayed in the plugin store (in the future).
-  description: My awesome plugin.
+  description: A demo plugin using (usually) latest API.
 
   # The version of your plugin.
   # Remember to edit this when you are going to publish a release.
-  version: 0.1.0
+  version: 0.3.0
+  # The version number is equal to API version it uses
 
 # The target Minecraft version of your plugin.
 # In other words, the version of Minecraft which you expect your plugin to run on.
@@ -20,4 +21,4 @@ plugin:
 # After modifying this, please remember to execute `npm run update-dependency`
 # and then execute `npm install` (or other package managers).
 # Finally, FULLY CHECK YOUR CODE to see if there is any reference failure!
-targetMinecraftVersion: 1.21.0
+targetMinecraftVersion: 1.21.1
