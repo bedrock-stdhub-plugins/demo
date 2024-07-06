@@ -2,8 +2,10 @@
 import { StdhubPluginApi } from 'stdhub-plugin-api';
 import { storageApiDemo } from './storage-api-demo';
 import { commandDemo } from './command-demo';
+import { playerApiDemo } from './player-api-demo';
 export const pluginName = process.env.PLUGIN_NAME!;
 export const api = new StdhubPluginApi(pluginName);
 
 storageApiDemo();
 commandDemo();
+playerApiDemo();

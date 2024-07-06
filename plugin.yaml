@@ -12,7 +12,7 @@ plugin:
 
   # The version of your plugin.
   # Remember to edit this when you are going to publish a release.
-  version: 0.3.0
+  version: 0.4.1
   # The version number is equal to API version it uses
 
 # The target Minecraft version of your plugin.
