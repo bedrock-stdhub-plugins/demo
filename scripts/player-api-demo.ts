@@ -10,9 +10,12 @@ export async function playerApiDemo() {
       '2535467857671696'
     ]
   });
-  await api.log('§aJoin this server and see what is logged onto the terminal.');
-  await api.log(`§aAlso see '§eplugins/${pluginName}/ban.yaml§a'.`);
-  await api.log('§aSet the banned player to your name, restart the server, and join it. See what happens.');
+  await api.log([
+    '§e[Player API Demo]',
+    '§aJoin this server and see what is logged onto the terminal.',
+    `§aAlso see '§eplugins/${pluginName}/ban.yaml§a'.`,
+    '§aSet the banned player to your name, restart the server, and join it. See what happens.'
+  ].join('\n'));
   world.afterEvents.playerJoin.subscribe(event => system.run(async () => {
     const xuid = await api.getXuidByName(event.playerName);
     const name = await api.getNameByXuid(xuid!);

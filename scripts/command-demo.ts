@@ -1,7 +1,7 @@
 import { Command } from 'stdhub-plugin-api';
 import { api } from './main';
 
-export function commandDemo() {
+export async function commandDemo() {
   const testCmd = new Command();
 
   testCmd.addHandler(
@@ -28,7 +28,16 @@ export function commandDemo() {
     }
   );
 
-  api.registerCommand('test', testCmd);
+  await api.registerCommand('test', testCmd, 'test');
+
+  await api.log([
+    '§e[Command Demo]',
+    '§aType §b.test§a in the terminal, press Enter, and see the usage.',
+    '§aLog yourself in the game, and try calling this command again.',
+    '§aIf you are not a server operator, you will find that you do not have permission.',
+    '§aYou can use the perm command to grant yourself permission to use the test command.',
+    '§aTo see the usage of perm command, type §b.perm§a.'
+  ].join('\n'));
 }
 
 // Some possible commands that match the patterns:

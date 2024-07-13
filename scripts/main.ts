@@ -6,6 +6,10 @@ import { playerApiDemo } from './player-api-demo';
 export const pluginName = process.env.PLUGIN_NAME!;
 export const api = new StdhubPluginApi(pluginName);
 
-storageApiDemo();
-commandDemo();
-playerApiDemo();
+async function main(){
+  await storageApiDemo();
+  await commandDemo();
+  await playerApiDemo();
+}
+
+main();
