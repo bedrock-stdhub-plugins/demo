@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@minecraft/math": "^1.1.0",
-    "@minecraft/server": "1.12.0-beta.1.21.1-stable",
+    "@minecraft/server": "1.12.0-beta.1.21.3-stable",
     "@minecraft/server-ui": "^1.1.0",
     "@minecraft/vanilla-data": "^1.21.1",
     "stdhub-plugin-api": "^0.6.0"

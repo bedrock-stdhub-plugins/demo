@@ -12,7 +12,7 @@ plugin:
 
   # The version of your plugin.
   # Remember to edit this when you are going to publish a release.
-  version: 0.5.2
+  version: 0.6.0
   # The version number is equal to API version it uses
 
 # The target Minecraft version of your plugin.
@@ -21,4 +21,4 @@ plugin:
 # After modifying this, please remember to execute `npm run update-dependency`
 # and then execute `npm install` (or other package managers).
 # Finally, FULLY CHECK YOUR CODE to see if there is any reference failure!
-targetMinecraftVersion: 1.21.1
+targetMinecraftVersion: 1.21.3
