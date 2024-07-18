@@ -44,15 +44,15 @@ async function testStorageApi() {
   await api.log(`§e${subConfigText}`);
 
   await api.log('§aWrite data:');
-  await api.writeData('foo/bar.json', { key: 'val' });
+  await api.writeData('foo/bar.json', { key: 'val' }, true);
   await api.log('§eData is successfully written.');
 
   await api.log('§aRead data:');
-  const data = await api.readData('foo/bar.json');
+  const data = await api.readData('foo/bar.json', true);
   await api.log(`§e${JSON.stringify(data)}`);
 
   await api.log('§aDelete data:');
-  await api.deleteData('foo/bar.json');
+  await api.deleteData('foo/bar.json', true);
   await api.log('§aNow read it again. An§a error§a will be thrown:');
-  await api.readData('foo/bar.json');
+  await api.readData('foo/bar.json', true);
 }
